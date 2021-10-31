@@ -1,1 +1,434 @@
+*{
+    padding: 0;
+    margin: 0;
 
+}
+nav{
+    height: 10vh;
+    width: 100%;
+    background-color: #2874f0;
+    position: fixed;
+    z-index: 4;
+}
+nav img:first-child{
+    height: 20px;
+    width: 80px;
+    cursor: pointer;
+}
+main{
+
+}
+.flipkart_footer{
+    background-color:#172337;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro{
+     height: 20rem;
+}
+
+.icons{
+    display: flex;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.icons div{
+    padding-right: 2vw;
+}
+li{
+    color: white;
+    display: inline;
+}
+
+
+#payment-img{
+    position: relative;
+    top: 9px;
+    left: 90px;
+    height: 16px;
+}
+.intro {
+    display: flex;
+    flex-direction: row;
+  
+}
+.intro div a{
+    display: block;
+    color: white;
+    padding: 4px 20px 4px 8px;
+    font-size: 14px;
+    text-decoration: none;
+}
+.intro div h2{
+    font-size:14px;
+    padding-top: 42px;
+    font-weight: lighter;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 8px;
+    color: grey;
+}
+.intro div a:hover{
+    text-decoration: underline;
+}
+.intro div{
+    display:flex;
+    flex-direction: column;
+}
+.flipkart_icons{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 10px 109px;
+    left: 6vw;
+    order: 1;
+}
+.flipkart_icons a {
+    text-decoration: none;
+    color:white;
+    font-style: italic;
+    font-size: 11px;
+    font-family: roboto,arial,sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+.flipkart_icons a:hover{
+    text-decoration: underline;
+}
+.flipkart_icons span{
+    color:#ffe500 ;
+}
+.flipkart_icons a img{
+    height: 10px;
+    display: inline;
+    cursor: pointer;
+}
+.triple_img{
+    /* padding-top: 2rem;
+    padding-right: 18rem; */
+    cursor: pointer;
+    visibility: hidden;
+}
+/* #hamburgur{
+    position: relative;
+    top: 3vh;
+    width: 8vw;
+    height: 3vh;
+} */
+#hamburgur{
+    position: relative;
+    top: 3vh;
+    left :2vw;
+    color: white;
+    width: 8vw;
+    height: 3vh;
+}
+
+.navbar_window{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+.navbar_mobile{
+    position: relative;
+    visibility: hidden;
+    height: 100vh;
+    width: 42vw;
+    background-color: aqua;
+    z-index: 5;
+}
+.search_bar{
+    display: flex;
+    order: 2;
+}
+.search_bar input{
+    position: relative;
+    top: 9px;
+    width: 331px;
+    height: 32px;
+}
+.search_bar button {
+    position: relative;
+    top: 11px;
+    right: 50px;
+    height: 32px;
+    width: 3vw;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color:white;
+    border: 1px solid white;
+    
+}
+.drop_menu{
+    width: 5vw;
+    height: 2vh;
+    background-color: white;
+    padding: 0.5vw 0px 0.5vw 1.5vw;
+    position: relative;
+    top: 18px;
+    cursor: pointer;
+    order: 3;
+    display: inline;
+}
+.drop_menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    color:  #2874f0;
+    border-radius: 2px;
+    border: 1px solid white;
+    /* font-size: 20px; */
+}
+.more_container{
+    width: 90px;
+    height: 17px;
+    background-color: #2874f0;
+    padding: 5px 0px 10px 41px;
+    position: relative;
+    top: 14px;
+    cursor: pointer;
+    order: 4;
+   
+}
+.more_container svg{
+    position: relative;
+    left: 49px;
+    top: -20px;
+    transform: rotate(271deg);
+    transition-duration: 0.5s;
+ 
+}
+
+.more_container:hover .container1 svg{
+    transition-duration: 0.5s;
+    transform: rotate(89deg);
+}
+.cart{
+    width: 4vw;
+    height: 17px;
+    background-color: #2874f0;
+    padding: 9px 0px 10px 1vw;
+    position: relative;
+    top: 13px;
+    display: flex;
+    cursor: pointer;
+    order: 5;
+}
+.cart h3{
+    position: relative;
+    left: 6px;
+    top: -5px;
+    
+}
+.container2{
+    position: relative;
+    top: -12px;
+    left: 20px;
+    background-color: white;
+    width: 10px;
+    height: 27px;
+    transform: rotate(47deg);
+    z-index: 1;
+}
+.container3,.container4 , .container5 , .container6 , .container7{
+    position: relative;
+    top:-31px;
+    left: -85px;
+    border-radius: 4px;
+    padding: 13px;
+    width: 242px;
+    background-color:white;
+    box-shadow: 2px 0px 5px -3px grey;
+    z-index: 0;
+    /* border-top: 0.1px solid grey; */
+   
+    
+}
+
+.invisible  {
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+  
+}
+.container1:hover ~ .invisible{
+    visibility: visible;
+}
+.invisible:hover{
+visibility: visible;
+}
+.container3 svg,.container4 svg , .container5 svg , .container6 svg , .container7 svg{
+    position: relative;
+    top: 4px;
+    left: 1px;
+    padding-right: 8px;
+    transform: rotate(0deg);
+}
+.container3 h4 , .container4 h4 , .container5 h4 , .container6 h4 , .container7 h4{
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    display: inline;
+}
+.small_con{
+    width: 100%;
+    height: 121px;
+    background-color:white;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top:70px;
+    /* margin-bottom: 12px; */
+}
+
+.small_con div img{
+    min-height: 70px;
+    height: 70px;
+    flex-shrink: 3;
+}
+.small_con div{
+    padding-right: 6vw;
+    flex-shrink: 3;
+    display:inline;
+}
+.crousel{
+    width: 100%;
+    height: 280px;
+    background-color:skyblue;
+}
+.forward_btn{
+    position: relative;
+    left: 95vw;
+    top: -25vh;
+    width: 3.7vw;
+    height: 8vh;
+    /* transform: rotate(180deg); */
+    background-color: transparent;
+}
+.forward_btn img{
+    height: 4vh;
+    width: 2vw;
+    padding-top: 3vh;
+    z-index: 2;
+}
+.backward_btn{
+    position: relative;
+    width: 3.7vw;
+    height: 8vh;
+    background-color:transparent;
+    top: -32vh;
+    z-index: 2;
+}
+.backward_btn img{
+    height: 4vh;
+    width: 2vw;
+    padding-top: 3vh;
+}
+.card_header{
+    margin: 7px;
+    background-color:white;
+    box-shadow: 2px 1px 1px 1px grey;
+    width: 100%;
+    height: 60px;
+}
+.card_header p{
+    font-size: 25px; 
+    display: inline; 
+    padding-right: 1000px;   
+}
+.card_header button{
+    background-color:  #2874f0;
+    border: 2px solid  #2874f0;
+    font-size: 14px;
+    height: 34px;
+    width: 80px;
+    margin: 3px;
+    color:white;
+    cursor: pointer;
+}
+.cards{
+    margin: 8px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.cards div{
+background-color:white;
+padding-right: 5vw;
+/* height: 71vh;
+width: 24vw; */
+/* box-shadow: 2px 2px 1px 0px grey; */
+}
+.cards div img:hover{
+    transform: scale(1.05);
+}
+@media only screen and (max-width:600px){
+    nav{
+        height: 16vh;
+        width: 100vw;
+    }
+    .small_con{
+        margin-bottom: 178px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        padding-top: 17vh;
+    }
+    .small_con div{
+        padding-right: 12vw;
+    }
+    .card_header p{
+        padding-right: 5px;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .card_header{
+        box-shadow: none;
+    }
+    .icon1 , .icon2 , .icon3 , .icon4{
+        display: none;
+    }
+    .triple_img{
+        visibility: visible;
+    }
+    .triple_img{
+        order: 1;
+    }
+    .flipkart_icons{
+        order: 2;
+        position: relative;
+        padding: 10px 10px;
+        left: 6vw;
+    }
+    .drop_menu{
+        width: 12vw;
+        height: 3vh;
+        margin-left: 23vw;
+        order: 3;
+    }
+    .more_container{
+        display: none;
+    }
+    .cart{
+        order: 4;
+        padding: 9px 0px 10px 8vw;
+        position: relative;
+        top: 14px;
+    }
+    .search_bar  {
+        order: 5;
+    }
+    .search_bar input{
+        width: 100vw;
+        box-sizing: border-box;
+        /* margin-left: 42px; */
+    }
+    .cart h3{
+        display: none;
+    }
+
+}
